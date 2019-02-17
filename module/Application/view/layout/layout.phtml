@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->headTitle('EC')->setSeparator(' - ')->setAutoEscape(false) ?>
+
+        <?php echo $this->headMeta()
+            ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+            ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+            // disabling client-side cache
+//            ->appendHttpEquiv('expires', 'Wed, 26 Feb 1997 08:21:57 GMT')
+//            ->appendHttpEquiv('pragma', 'no-cache')
+//            ->appendHttpEquiv('Cache-Control', 'no-cache')
+            ->appendHttpEquiv('Cache-Control', 'private')
+        ?>
+
+        <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/dist/img/favicon.ico')) ?>
+
+    </head>
+    <body>
+        <div class="container main-content-container">
+            <?php echo $this->content; ?>
+        </div>
+        <?php echo $this->inlineScript(); ?>
+    </body>
+</html>

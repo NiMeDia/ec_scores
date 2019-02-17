@@ -1,0 +1,12 @@
+{
+    "name": "ec2020/scoreapi",
+    "description": "EC2020 ScoreAPI",
+    "license": "proprietary",
+    "keywords": [],
+    "require": {
+        "php": ">=5.6",
+        "zendframework/zendframework": ">=3.0.0",
+        "doctrine/doctrine-orm-module": ">=1.1.1",
+        "doctrine/migrations": ">=1.2.2"
+    }
+}
